@@ -25,7 +25,8 @@ async function getDirectory(checkPaths: String[], prompt: boolean = false) {
         result.startsWith("./") ||
         result.startsWith("/")
       ) {
-        return checkPaths[path];
+        if (!result.endsWith("/")) result += "/";
+        return result;
       }
     }
   }
