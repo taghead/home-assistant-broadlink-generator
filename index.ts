@@ -1,5 +1,13 @@
 const csscolors = require('css-color-names');
 
-for ( const color in csscolors ){
-    console.log(`- ${color}`);
+import buttons from './lib/buttons';
+import getDirectory from './lib/getDirectory';
+
+main();
+
+async function main(){
+    const dir = await getDirectory(['/config', '~/.homeassistant'], true);
+
+    console.log(`PATH: ${dir}`)
+    
 }

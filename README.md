@@ -32,11 +32,23 @@ A quick and messy way to generate cards based off learnt Broadlink codes learned
 
 #### Learning commands
 
-Ensure when your learning commands the colors names match this [list](https://www.w3schools.com/colors/colors_names.asp).
+Go to Developer Tools > Services > Remote: Learn Command and learn the following.
+
+- The buttons must follow the names provided in [/lib/buttons](/lib/buttons).
+
+- Ensure when your learning commands the colors names match this [list](https://www.w3schools.com/colors/colors_names.asp).
 
 An example for an 16 color remote would look like this. 
 
 ```yaml
+- on
+- off
+- brighten
+- dim
+- flash
+- strobe
+- fade
+- smooth
 - red
 - darkorange
 - orangered
@@ -54,3 +66,6 @@ An example for an 16 color remote would look like this.
 - deeppink
 - white
 ```
+
+Run `yarn start` and if prompted set the path to the home assistant config directory. 
+
