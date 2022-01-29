@@ -1,0 +1,15 @@
+{
+  "name": "home-assistant-broadlink-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:taghead/home-assistant-broadlink-generator.git",
+  "author": "Andrew Chander <13403032+taghead@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only index.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
