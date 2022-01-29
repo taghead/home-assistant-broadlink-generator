@@ -28,3 +28,29 @@ A quick and messy way to generate cards based off learnt Broadlink codes learned
 
 ## Guide
 
+### RGB
+
+#### Learning commands
+
+Ensure when your learning commands the colors names match this [list](https://www.w3schools.com/colors/colors_names.asp).
+
+An example for an 16 color remote would look like this. 
+
+```yaml
+- red
+- darkorange
+- orangered
+- orange
+- yellow
+- green
+- forestgreen
+- lightseagreen
+- steelblue
+- slategrey
+- blue
+- royalblue
+- purple
+- cadetblue
+- deeppink
+- white
+```
