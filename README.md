@@ -14,7 +14,7 @@
 
 A quick and messy way to generate cards based off learnt Broadlink codes learned through Home Assistant Remote: Learn Command service.
 
-## Requirements 
+## Requirements
 
 - Home Assistant Installed with:
   - [RGB Light Cards](https://github.com/bokub/rgb-light-card)
@@ -22,9 +22,9 @@ A quick and messy way to generate cards based off learnt Broadlink codes learned
 
 ## Features
 
-- [x]  RGB
-- [ ]  AC
-- [ ]  Speaker 
+- [x] RGB
+- [ ] AC
+- [ ] Speaker
 
 ## Guide
 
@@ -38,7 +38,7 @@ Go to Developer Tools > Services > Remote: Learn Command and learn the following
 
 - Ensure when your learning commands the colors names match this [list](https://www.w3schools.com/colors/colors_names.asp).
 
-An example for an 16 color remote would look like this. 
+An example for an 16 color remote would look like this.
 
 ```yaml
 - on
@@ -67,5 +67,4 @@ An example for an 16 color remote would look like this.
 - white
 ```
 
-Run `yarn start` and if prompted set the path to the home assistant config directory. 
-
+Run `yarn start` and if prompted set the path to the home assistant config directory.

@@ -1,5 +1,5 @@
-const prompts = require('prompts');
-const fs = require('fs');
+const prompts = require("prompts");
+const fs = require("fs");
 
 /**
  * Returns the first existing directory in an array.
@@ -16,21 +16,34 @@ const fs = require('fs');
  * getDirectory(['/lid','./node'], true);
  * @returns {string} false
  */
- async function getDirectory(checkPaths: String[], prompt: boolean = false) {
-    for ( const path in checkPaths ){
-        if (fs.existsSync(checkPaths[path])) {
-            return checkPaths[path]
-        }
+async function getDirectory(checkPaths: String[], prompt: boolean = false) {
+  for (const path in checkPaths) {
+    if (fs.existsSync(checkPaths[path])) {
+      let result = checkPaths[path];
+      if (
+        result.startsWith(".") ||
+        result.startsWith("./") ||
+        result.startsWith("/")
+      ) {
+        return checkPaths[path];
+      }
     }
-    if (prompt){
-        const response = await prompts({
-            type: 'text',
-            name: 'path',
-            message: 'Please enter a valid path to the Home Assistant config folder?'
-          })
-            return getDirectory([response.path], true);
+  }
+  if (prompt) {
+    const response = await prompts({
+      type: "text",
+      name: "path",
+      message:
+        "Please enter a valid path to the Home Assistant config folder (type exit to quit)?",
+    });
+
+    if (response.path === "exit") {
+      process.exit();
     }
-    return false
+
+    return getDirectory([response.path], true);
+  }
+  return false;
 }
 
-export default getDirectory
+export default getDirectory;
