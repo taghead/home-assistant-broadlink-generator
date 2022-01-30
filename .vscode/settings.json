@@ -5,5 +5,5 @@
   },
   "editor.formatOnSave": true,
   "editor.minimap.maxColumn": 80,
-  "cSpell.words": ["csscolors"]
+  "cSpell.words": ["broadlink", "csscolors", "homeassistant"]
 }

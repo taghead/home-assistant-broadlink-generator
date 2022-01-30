@@ -44,3 +44,8 @@ yarn.lock
 broadlink*.json
 configuration.yaml
 .storage/
+index-linux
+index-macos
+index-win.exe
+/dist
+/bin

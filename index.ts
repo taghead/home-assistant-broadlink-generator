@@ -9,6 +9,7 @@ main();
 async function main() {
   const dir = await getHomeAssistantDir();
   const storageDir = `${dir}/.storage/`;
+  const scriptFile = `${dir}/scripts.yaml`;
   const devices: Object[] = [];
 
   const files = await fs.readdirSync(storageDir);
@@ -25,11 +26,14 @@ async function main() {
   let fileWrite;
 
   for (const device in devices) {
+    //@ts-ignore
     const data = devices[device].data;
     for (const deviceId in data) {
       for (const command in data[deviceId]) {
+        //@ts-ignore
         const id = `${deviceId.toLowerCase().replaceAll(" ", "_")}_${command
           .toLowerCase()
+          //@ts-ignore
           .replaceAll(" ", "_")}`;
         const alias = `${deviceId} ${command}`;
 
@@ -42,7 +46,7 @@ async function main() {
     }
   }
 
-  fs.writeFile("scripts.yaml", fileWrite, (err: any) => {
+  fs.writeFile(`${scriptFile}`, fileWrite, (err: any) => {
     err ? console.log(err) : null;
   });
 }

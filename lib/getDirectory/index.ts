@@ -21,6 +21,7 @@ export async function getHomeAssistantDir() {
   });
 }
 
+//@ts-ignore
 export async function getDirectory(directory: directory) {
   for (const path of directory.paths) {
     if (fs.existsSync(path)) {

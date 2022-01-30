@@ -1,6 +1,7 @@
 const prompts = require("prompts");
 import { getDirectory, directory } from ".";
 
+//@ts-ignore
 export async function promptUntilSuccess(directory: directory) {
   const response = await prompts({
     type: "text",
