@@ -1,14 +1,9 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[prisma]": {
-      "editor.defaultFormatter": "Prisma.prisma"
-    },
-    "editor.formatOnSave": true,
-    "editor.minimap.maxColumn": 80,
-    "cSpell.words": [
-        "csscolors"
-    ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "editor.minimap.maxColumn": 80,
+  "cSpell.words": ["csscolors"]
 }

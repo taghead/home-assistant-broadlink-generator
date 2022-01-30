@@ -7,6 +7,7 @@ export interface directory {
   checkForFiles: String[];
   promptOnFail?: boolean;
   promptOnFailMessage?: string;
+  promptHelpMessage?: string;
 }
 
 export async function getHomeAssistantDir() {
@@ -16,6 +17,7 @@ export async function getHomeAssistantDir() {
     promptOnFail: true,
     promptOnFailMessage:
       "Please enter a valid path to the Home Assistant config folder?",
+    promptHelpMessage: "Usually the directory has a configuration.yaml file.",
   });
 }
 
@@ -24,7 +26,6 @@ export async function getDirectory(directory: directory) {
     if (fs.existsSync(path)) {
       for (const file of directory.checkForFiles) {
         const sanitizedPath = await formatDirectory(path);
-        console.log(`${sanitizedPath}${file}`);
         if (fs.existsSync(`${sanitizedPath}${file}`))
           return formatDirectory(`${sanitizedPath}`);
       }

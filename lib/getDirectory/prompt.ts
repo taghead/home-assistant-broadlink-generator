@@ -5,7 +5,7 @@ export async function promptUntilSuccess(directory: directory) {
   const response = await prompts({
     type: "text",
     name: "path",
-    message: directory.promptOnFailMessage + "\n>",
+    message: directory.promptOnFailMessage + " (type help) \n>",
   });
 
   if (
@@ -15,9 +15,20 @@ export async function promptUntilSuccess(directory: directory) {
   ) {
     console.log("Goodbye. 👋");
     process.exit();
+  } else if (response.path === "help") {
+    console.log(`
+      Already checked: 
+        ${directory.paths}
+        
+      The directory contains the following files:
+        ${directory.checkForFiles}
+
+      Help message: 
+        ${directory.promptHelpMessage}
+    `);
   }
 
-  directory.paths = [`${response.path}`];
+  directory.paths.push(response.path);
 
   return await getDirectory(directory);
 }
