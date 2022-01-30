@@ -47,8 +47,11 @@ async function main() {
 }
 
 function toYAMLScript(deviceId: String, command: String) {
-  return `${simpleSanitize(deviceId)}_${simpleSanitize(command)}:
-  alias: ${deviceId} ${command}
+  const id = `${simpleSanitize(deviceId)}_${simpleSanitize(command)}`;
+  const alias = `${deviceId} ${command}`;
+
+  return `${id}:
+  alias: ${alias}
   sequence:
   - service: remote.send_command
     target:
@@ -62,9 +65,7 @@ function toYAMLScript(deviceId: String, command: String) {
 }
 
 function simpleSanitize(string: String) {
-  string.toLowerCase();
-  string.replaceAll(" ", "_");
-  return string;
+  return string.toLowerCase().replaceAll(" ", "_");
 }
 
 function log(msg: any) {
