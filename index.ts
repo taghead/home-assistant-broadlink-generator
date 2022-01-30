@@ -2,18 +2,20 @@ const csscolors = require("css-color-names");
 const fs = require("fs");
 
 import buttons from "./lib/buttons";
-import getDirectory from "./lib/getDirectory";
+import { getHomeAssistantDir } from "./lib/getDirectory";
 
 main();
 
 async function main() {
-  const dir = await getDirectory(["/config", "~/.homeassistant"], true);
+  const dir = await getHomeAssistantDir();
+  console.log(dir);
   const devices: Object[] = [];
 
   const files = await fs.readdirSync(dir);
+
   for (const i in files) {
     const file = files[i];
-    if (file.endsWith(".json") && file.startsWith("broadlink_remote")) {
+    if (file.startsWith("broadlink_remote") && file.endsWith(".json")) {
       console.log(`Found ${dir}${file}`);
       const data = require(`${dir}${file}`);
       devices.push(data);
@@ -31,20 +33,28 @@ async function main() {
           .replaceAll(" ", "_")}`;
         const alias = `${deviceId} ${command}`;
 
-        if (!fileWrite) fileWrite = toYAMLScript(id, alias, deviceId, command);
-        else fileWrite += toYAMLScript(id, alias, deviceId, command);
+        fileWrite == undefined
+          ? (fileWrite = toYAMLScript(id, alias, deviceId, command))
+          : (fileWrite += toYAMLScript(id, alias, deviceId, command));
+
+        console.log(`Created script for ... ${id}`);
       }
     }
   }
 
-  fs.writeFile("scripts.yaml", fileWrite, function (err) {
-    if (err) return console.log(err);
+  fs.writeFile("scripts.yaml", fileWrite, (err: any) => {
+    err ? console.log(err) : null;
   });
 }
 
-function toYAMLScript(id, alias, deviceId, command) {
+function toYAMLScript(
+  id: String,
+  alias: String,
+  deviceId: String,
+  command: String
+) {
   return `${id}:
-  alias: ${alias} +
+  alias: ${alias}
   sequence:
   - service: remote.send_command
     target:

@@ -1,1056 +1,528 @@
-led_strip_light_table_light_+:
-  alias: LED Strip Light Table Light + +
+rgb_strip_table_on:
+  alias: RGB Strip Table on
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Light +
+      device: RGB Strip Table
+      command: on
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_light_-:
-  alias: LED Strip Light Table Light - +
+rgb_strip_table_off:
+  alias: RGB Strip Table off
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Light -
+      device: RGB Strip Table
+      command: off
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_off:
-  alias: LED Strip Light Table Off +
+rgb_strip_table_brighten:
+  alias: RGB Strip Table brighten
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Off
+      device: RGB Strip Table
+      command: brighten
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_on:
-  alias: LED Strip Light Table On +
+rgb_strip_table_dim:
+  alias: RGB Strip Table dim
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: On
+      device: RGB Strip Table
+      command: dim
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_flash:
-  alias: LED Strip Light Table Flash +
+rgb_strip_table_red:
+  alias: RGB Strip Table red
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Flash
+      device: RGB Strip Table
+      command: red
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_strobe:
-  alias: LED Strip Light Table Strobe +
+rgb_strip_table_darkorange:
+  alias: RGB Strip Table darkorange
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Strobe
+      device: RGB Strip Table
+      command: darkorange
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_fade:
-  alias: LED Strip Light Table Fade +
+rgb_strip_table_orangered:
+  alias: RGB Strip Table orangered
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Fade
+      device: RGB Strip Table
+      command: orangered
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_smooth:
-  alias: LED Strip Light Table Smooth +
+rgb_strip_table_orange:
+  alias: RGB Strip Table orange
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Smooth
+      device: RGB Strip Table
+      command: orange
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_red:
-  alias: LED Strip Light Table Red +
+rgb_strip_table_yellow:
+  alias: RGB Strip Table yellow
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Red
+      device: RGB Strip Table
+      command: yellow
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_green:
-  alias: LED Strip Light Table Green +
+rgb_strip_table_green:
+  alias: RGB Strip Table green
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Green
+      device: RGB Strip Table
+      command: green
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_blue:
-  alias: LED Strip Light Table Blue +
+rgb_strip_table_forestgreen:
+  alias: RGB Strip Table forestgreen
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Blue
+      device: RGB Strip Table
+      command: forestgreen
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_white:
-  alias: LED Strip Light Table White +
+rgb_strip_table_lightseagreen:
+  alias: RGB Strip Table lightseagreen
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: White
+      device: RGB Strip Table
+      command: lightseagreen
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_blood_orange:
-  alias: LED Strip Light Table Blood Orange +
+rgb_strip_table_steelblue:
+  alias: RGB Strip Table steelblue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Blood Orange
+      device: RGB Strip Table
+      command: steelblue
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_medium_green:
-  alias: LED Strip Light Table Medium Green +
+rgb_strip_table_slategrey:
+  alias: RGB Strip Table slategrey
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Medium Green
+      device: RGB Strip Table
+      command: slategrey
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_deep_royal_blue:
-  alias: LED Strip Light Table Deep Royal Blue +
+rgb_strip_table_blue:
+  alias: RGB Strip Table blue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Deep Royal Blue
+      device: RGB Strip Table
+      command: blue
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_orange:
-  alias: LED Strip Light Table Orange +
+rgb_strip_table_royalblue:
+  alias: RGB Strip Table royalblue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Orange
+      device: RGB Strip Table
+      command: royalblue
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_cyan:
-  alias: LED Strip Light Table Cyan +
+rgb_strip_table_purple:
+  alias: RGB Strip Table purple
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Cyan
+      device: RGB Strip Table
+      command: purple
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_purple:
-  alias: LED Strip Light Table Purple +
+rgb_strip_table_cadetblue:
+  alias: RGB Strip Table cadetblue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Purple
+      device: RGB Strip Table
+      command: cadetblue
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_pale_orange:
-  alias: LED Strip Light Table Pale Orange +
+rgb_strip_table_deeppink:
+  alias: RGB Strip Table deeppink
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Pale Orange
+      device: RGB Strip Table
+      command: deeppink
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_royal_blue:
-  alias: LED Strip Light Table Royal Blue +
+rgb_strip_table_white:
+  alias: RGB Strip Table white
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Royal Blue
+      device: RGB Strip Table
+      command: white
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_lavender:
-  alias: LED Strip Light Table Lavender +
+rgb_strip_table_flash:
+  alias: RGB Strip Table flash
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Lavender
+      device: RGB Strip Table
+      command: flash
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_yellow:
-  alias: LED Strip Light Table Yellow +
+rgb_strip_table_strobe:
+  alias: RGB Strip Table strobe
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Yellow
+      device: RGB Strip Table
+      command: strobe
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_aquamarine:
-  alias: LED Strip Light Table Aquamarine +
+rgb_strip_table_fade:
+  alias: RGB Strip Table fade
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Aquamarine
+      device: RGB Strip Table
+      command: fade
   mode: single
   icon: mdi:led-strip
-led_strip_light_table_magenta:
-  alias: LED Strip Light Table Magenta +
+rgb_strip_table_smooth:
+  alias: RGB Strip Table smooth
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: LED Strip Light Table
-      command: Magenta
+      device: RGB Strip Table
+      command: smooth
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_light_+:
-  alias: RGB Acrylic Chiaki Light + +
+led_light_base_on:
+  alias: LED Light Base on
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Light +
+      device: LED Light Base
+      command: on
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_light_-:
-  alias: RGB Acrylic Chiaki Light - +
+led_light_base_off:
+  alias: LED Light Base off
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Light -
+      device: LED Light Base
+      command: off
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_off:
-  alias: RGB Acrylic Chiaki Off +
+led_light_base_brighten:
+  alias: LED Light Base brighten
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Off
+      device: LED Light Base
+      command: brighten
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_on:
-  alias: RGB Acrylic Chiaki On +
+led_light_base_dim:
+  alias: LED Light Base dim
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: On
+      device: LED Light Base
+      command: dim
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_flash:
-  alias: RGB Acrylic Chiaki Flash +
+led_light_base_flash:
+  alias: LED Light Base flash
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Flash
+      device: LED Light Base
+      command: flash
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_strobe:
-  alias: RGB Acrylic Chiaki Strobe +
+led_light_base_strobe:
+  alias: LED Light Base strobe
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Strobe
+      device: LED Light Base
+      command: strobe
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_fade:
-  alias: RGB Acrylic Chiaki Fade +
+led_light_base_fade:
+  alias: LED Light Base fade
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Fade
+      device: LED Light Base
+      command: fade
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_smooth:
-  alias: RGB Acrylic Chiaki Smooth +
+led_light_base_smooth:
+  alias: LED Light Base smooth
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Smooth
+      device: LED Light Base
+      command: smooth
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_red:
-  alias: RGB Acrylic Chiaki Red +
+led_light_base_red:
+  alias: LED Light Base red
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Red
+      device: LED Light Base
+      command: red
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_green:
-  alias: RGB Acrylic Chiaki Green +
+led_light_base_darkorange:
+  alias: LED Light Base darkorange
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Green
+      device: LED Light Base
+      command: darkorange
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_blue:
-  alias: RGB Acrylic Chiaki Blue +
+led_light_base_orangered:
+  alias: LED Light Base orangered
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Blue
+      device: LED Light Base
+      command: orangered
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_white:
-  alias: RGB Acrylic Chiaki White +
+led_light_base_orange:
+  alias: LED Light Base orange
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: White
+      device: LED Light Base
+      command: orange
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_blood_orange:
-  alias: RGB Acrylic Chiaki Blood Orange +
+led_light_base_yellow:
+  alias: LED Light Base yellow
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Blood Orange
+      device: LED Light Base
+      command: yellow
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_medium_green:
-  alias: RGB Acrylic Chiaki Medium Green +
+led_light_base_green:
+  alias: LED Light Base green
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Medium Green
+      device: LED Light Base
+      command: green
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_deep_royal_blue:
-  alias: RGB Acrylic Chiaki Deep Royal Blue +
+led_light_base_forestgreen:
+  alias: LED Light Base forestgreen
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Deep Royal Blue
+      device: LED Light Base
+      command: forestgreen
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_orange:
-  alias: RGB Acrylic Chiaki Orange +
+led_light_base_lightseagreen:
+  alias: LED Light Base lightseagreen
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Orange
+      device: LED Light Base
+      command: lightseagreen
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_cyan:
-  alias: RGB Acrylic Chiaki Cyan +
+led_light_base_steelblue:
+  alias: LED Light Base steelblue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Cyan
+      device: LED Light Base
+      command: steelblue
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_purple:
-  alias: RGB Acrylic Chiaki Purple +
+led_light_base_slategrey:
+  alias: LED Light Base slategrey
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Purple
+      device: LED Light Base
+      command: slategrey
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_pale_orange:
-  alias: RGB Acrylic Chiaki Pale Orange +
+led_light_base_blue:
+  alias: LED Light Base blue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Pale Orange
+      device: LED Light Base
+      command: blue
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_royal_blue:
-  alias: RGB Acrylic Chiaki Royal Blue +
+led_light_base_royalblue:
+  alias: LED Light Base royalblue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Royal Blue
+      device: LED Light Base
+      command: royalblue
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_lavender:
-  alias: RGB Acrylic Chiaki Lavender +
+led_light_base_purple:
+  alias: LED Light Base purple
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Lavender
+      device: LED Light Base
+      command: purple
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_yellow:
-  alias: RGB Acrylic Chiaki Yellow +
+led_light_base_cadetblue:
+  alias: LED Light Base cadetblue
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Yellow
+      device: LED Light Base
+      command: cadetblue
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_aquamarine:
-  alias: RGB Acrylic Chiaki Aquamarine +
+led_light_base_deeppink:
+  alias: LED Light Base deeppink
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Aquamarine
+      device: LED Light Base
+      command: deeppink
   mode: single
   icon: mdi:led-strip
-rgb_acrylic_chiaki_magenta:
-  alias: RGB Acrylic Chiaki Magenta +
+led_light_base_white:
+  alias: LED Light Base white
   sequence:
   - service: remote.send_command
     target:
       entity_id: remote.broadlink_remote
     data:
-      device: RGB Acrylic Chiaki
-      command: Magenta
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_light_+:
-  alias: LED Strip Light Table Light + +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Light +
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_light_-:
-  alias: LED Strip Light Table Light - +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Light -
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_off:
-  alias: LED Strip Light Table Off +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Off
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_on:
-  alias: LED Strip Light Table On +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: On
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_flash:
-  alias: LED Strip Light Table Flash +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Flash
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_strobe:
-  alias: LED Strip Light Table Strobe +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Strobe
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_fade:
-  alias: LED Strip Light Table Fade +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Fade
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_smooth:
-  alias: LED Strip Light Table Smooth +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Smooth
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_red:
-  alias: LED Strip Light Table Red +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Red
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_green:
-  alias: LED Strip Light Table Green +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Green
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_blue:
-  alias: LED Strip Light Table Blue +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Blue
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_white:
-  alias: LED Strip Light Table White +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: White
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_blood_orange:
-  alias: LED Strip Light Table Blood Orange +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Blood Orange
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_medium_green:
-  alias: LED Strip Light Table Medium Green +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Medium Green
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_deep_royal_blue:
-  alias: LED Strip Light Table Deep Royal Blue +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Deep Royal Blue
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_orange:
-  alias: LED Strip Light Table Orange +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Orange
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_cyan:
-  alias: LED Strip Light Table Cyan +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Cyan
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_purple:
-  alias: LED Strip Light Table Purple +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Purple
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_pale_orange:
-  alias: LED Strip Light Table Pale Orange +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Pale Orange
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_royal_blue:
-  alias: LED Strip Light Table Royal Blue +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Royal Blue
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_lavender:
-  alias: LED Strip Light Table Lavender +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Lavender
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_yellow:
-  alias: LED Strip Light Table Yellow +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Yellow
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_aquamarine:
-  alias: LED Strip Light Table Aquamarine +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Aquamarine
-  mode: single
-  icon: mdi:led-strip
-led_strip_light_table_magenta:
-  alias: LED Strip Light Table Magenta +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: LED Strip Light Table
-      command: Magenta
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_light_+:
-  alias: RGB Acrylic Chiaki Light + +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Light +
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_light_-:
-  alias: RGB Acrylic Chiaki Light - +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Light -
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_off:
-  alias: RGB Acrylic Chiaki Off +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Off
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_on:
-  alias: RGB Acrylic Chiaki On +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: On
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_flash:
-  alias: RGB Acrylic Chiaki Flash +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Flash
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_strobe:
-  alias: RGB Acrylic Chiaki Strobe +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Strobe
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_fade:
-  alias: RGB Acrylic Chiaki Fade +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Fade
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_smooth:
-  alias: RGB Acrylic Chiaki Smooth +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Smooth
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_red:
-  alias: RGB Acrylic Chiaki Red +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Red
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_green:
-  alias: RGB Acrylic Chiaki Green +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Green
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_blue:
-  alias: RGB Acrylic Chiaki Blue +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Blue
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_white:
-  alias: RGB Acrylic Chiaki White +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: White
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_blood_orange:
-  alias: RGB Acrylic Chiaki Blood Orange +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Blood Orange
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_medium_green:
-  alias: RGB Acrylic Chiaki Medium Green +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Medium Green
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_deep_royal_blue:
-  alias: RGB Acrylic Chiaki Deep Royal Blue +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Deep Royal Blue
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_orange:
-  alias: RGB Acrylic Chiaki Orange +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Orange
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_cyan:
-  alias: RGB Acrylic Chiaki Cyan +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Cyan
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_purple:
-  alias: RGB Acrylic Chiaki Purple +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Purple
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_pale_orange:
-  alias: RGB Acrylic Chiaki Pale Orange +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Pale Orange
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_royal_blue:
-  alias: RGB Acrylic Chiaki Royal Blue +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Royal Blue
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_lavender:
-  alias: RGB Acrylic Chiaki Lavender +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Lavender
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_yellow:
-  alias: RGB Acrylic Chiaki Yellow +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Yellow
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_aquamarine:
-  alias: RGB Acrylic Chiaki Aquamarine +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Aquamarine
-  mode: single
-  icon: mdi:led-strip
-rgb_acrylic_chiaki_magenta:
-  alias: RGB Acrylic Chiaki Magenta +
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_remote
-    data:
-      device: RGB Acrylic Chiaki
-      command: Magenta
+      device: LED Light Base
+      command: white
   mode: single
   icon: mdi:led-strip
