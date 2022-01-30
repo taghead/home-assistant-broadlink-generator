@@ -18,9 +18,9 @@ async function main() {
 
   for (const i in files) {
     const file = files[i];
-    if (file.startsWith("broadlink_remote") && file.endsWith(".json")) {
-      log(`Found ${storageDir}${file}`);
-      const data = require(`${storageDir}${file}`);
+    if (file.startsWith("broadlink_remote") && file.endsWith("codes")) {
+      let data = JSON.parse(fs.readFileSync(`${storageDir}${file}`, "utf-8"));
+      log(`FOUND ${file}`);
       devices.push(data);
     }
   }
