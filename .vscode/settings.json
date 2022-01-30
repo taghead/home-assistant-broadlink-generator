@@ -5,5 +5,13 @@
   },
   "editor.formatOnSave": true,
   "editor.minimap.maxColumn": 80,
-  "cSpell.words": ["broadlink", "csscolors", "homeassistant"]
+  "cSpell.words": [
+    "broadlink",
+    "Chander",
+    "csscolors",
+    "homeassistant",
+    "logfile",
+    "respawn",
+    "taghead"
+  ]
 }

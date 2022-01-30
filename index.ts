@@ -4,20 +4,22 @@ const fs = require("fs");
 import buttons from "./lib/buttons";
 import { getHomeAssistantDir } from "./lib/getDirectory";
 
+const logfile = true;
+
 main();
 
 async function main() {
   const dir = await getHomeAssistantDir();
   const storageDir = `${dir}/.storage/`;
   const scriptFile = `${dir}/scripts.yaml`;
-  const devices: Object[] = [];
+  const devices: any = [];
 
   const files = await fs.readdirSync(storageDir);
 
   for (const i in files) {
     const file = files[i];
     if (file.startsWith("broadlink_remote") && file.endsWith(".json")) {
-      console.log(`Found ${storageDir}${file}`);
+      log(`Found ${storageDir}${file}`);
       const data = require(`${storageDir}${file}`);
       devices.push(data);
     }
@@ -26,39 +28,27 @@ async function main() {
   let fileWrite;
 
   for (const device in devices) {
-    //@ts-ignore
-    const data = devices[device].data;
+    const data: any = devices[device].data;
     for (const deviceId in data) {
+      log(`${deviceId}:`);
       for (const command in data[deviceId]) {
-        //@ts-ignore
-        const id = `${deviceId.toLowerCase().replaceAll(" ", "_")}_${command
-          .toLowerCase()
-          //@ts-ignore
-          .replaceAll(" ", "_")}`;
-        const alias = `${deviceId} ${command}`;
-
         fileWrite == undefined
-          ? (fileWrite = toYAMLScript(id, alias, deviceId, command))
-          : (fileWrite += toYAMLScript(id, alias, deviceId, command));
+          ? (fileWrite = toYAMLScript(deviceId, command))
+          : (fileWrite += toYAMLScript(deviceId, command));
 
-        console.log(`Created script for ... ${id}`);
+        log(`  - ${command}`);
       }
     }
   }
 
   fs.writeFile(`${scriptFile}`, fileWrite, (err: any) => {
-    err ? console.log(err) : null;
+    err ? log(err) : null;
   });
 }
 
-function toYAMLScript(
-  id: String,
-  alias: String,
-  deviceId: String,
-  command: String
-) {
-  return `${id}:
-  alias: ${alias}
+function toYAMLScript(deviceId: String, command: String) {
+  return `${simpleSanitize(deviceId)}_${simpleSanitize(command)}:
+  alias: ${deviceId} ${command}
   sequence:
   - service: remote.send_command
     target:
@@ -69,4 +59,14 @@ function toYAMLScript(
   mode: single
   icon: mdi:led-strip
 `;
+}
+
+function simpleSanitize(string: String) {
+  string.toLowerCase();
+  string.replaceAll(" ", "_");
+}
+
+function log(msg: any) {
+  logfile ? console.log(msg) : null;
+  // do write to log file stuff
 }

@@ -1,4 +1,4 @@
-rgb_strip_table_on:
+undefined_undefined:
   alias: RGB Strip Table on
   sequence:
   - service: remote.send_command
@@ -9,7 +9,7 @@ rgb_strip_table_on:
       command: on
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_off:
+undefined_undefined:
   alias: RGB Strip Table off
   sequence:
   - service: remote.send_command
@@ -20,7 +20,7 @@ rgb_strip_table_off:
       command: off
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_brighten:
+undefined_undefined:
   alias: RGB Strip Table brighten
   sequence:
   - service: remote.send_command
@@ -31,7 +31,7 @@ rgb_strip_table_brighten:
       command: brighten
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_dim:
+undefined_undefined:
   alias: RGB Strip Table dim
   sequence:
   - service: remote.send_command
@@ -42,7 +42,7 @@ rgb_strip_table_dim:
       command: dim
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_red:
+undefined_undefined:
   alias: RGB Strip Table red
   sequence:
   - service: remote.send_command
@@ -53,7 +53,7 @@ rgb_strip_table_red:
       command: red
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_darkorange:
+undefined_undefined:
   alias: RGB Strip Table darkorange
   sequence:
   - service: remote.send_command
@@ -64,7 +64,7 @@ rgb_strip_table_darkorange:
       command: darkorange
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_orangered:
+undefined_undefined:
   alias: RGB Strip Table orangered
   sequence:
   - service: remote.send_command
@@ -75,7 +75,7 @@ rgb_strip_table_orangered:
       command: orangered
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_orange:
+undefined_undefined:
   alias: RGB Strip Table orange
   sequence:
   - service: remote.send_command
@@ -86,7 +86,7 @@ rgb_strip_table_orange:
       command: orange
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_yellow:
+undefined_undefined:
   alias: RGB Strip Table yellow
   sequence:
   - service: remote.send_command
@@ -97,7 +97,7 @@ rgb_strip_table_yellow:
       command: yellow
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_green:
+undefined_undefined:
   alias: RGB Strip Table green
   sequence:
   - service: remote.send_command
@@ -108,7 +108,7 @@ rgb_strip_table_green:
       command: green
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_forestgreen:
+undefined_undefined:
   alias: RGB Strip Table forestgreen
   sequence:
   - service: remote.send_command
@@ -119,7 +119,7 @@ rgb_strip_table_forestgreen:
       command: forestgreen
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_lightseagreen:
+undefined_undefined:
   alias: RGB Strip Table lightseagreen
   sequence:
   - service: remote.send_command
@@ -130,7 +130,7 @@ rgb_strip_table_lightseagreen:
       command: lightseagreen
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_steelblue:
+undefined_undefined:
   alias: RGB Strip Table steelblue
   sequence:
   - service: remote.send_command
@@ -141,7 +141,7 @@ rgb_strip_table_steelblue:
       command: steelblue
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_slategrey:
+undefined_undefined:
   alias: RGB Strip Table slategrey
   sequence:
   - service: remote.send_command
@@ -152,7 +152,7 @@ rgb_strip_table_slategrey:
       command: slategrey
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_blue:
+undefined_undefined:
   alias: RGB Strip Table blue
   sequence:
   - service: remote.send_command
@@ -163,7 +163,7 @@ rgb_strip_table_blue:
       command: blue
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_royalblue:
+undefined_undefined:
   alias: RGB Strip Table royalblue
   sequence:
   - service: remote.send_command
@@ -174,7 +174,7 @@ rgb_strip_table_royalblue:
       command: royalblue
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_purple:
+undefined_undefined:
   alias: RGB Strip Table purple
   sequence:
   - service: remote.send_command
@@ -185,7 +185,7 @@ rgb_strip_table_purple:
       command: purple
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_cadetblue:
+undefined_undefined:
   alias: RGB Strip Table cadetblue
   sequence:
   - service: remote.send_command
@@ -196,7 +196,7 @@ rgb_strip_table_cadetblue:
       command: cadetblue
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_deeppink:
+undefined_undefined:
   alias: RGB Strip Table deeppink
   sequence:
   - service: remote.send_command
@@ -207,7 +207,7 @@ rgb_strip_table_deeppink:
       command: deeppink
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_white:
+undefined_undefined:
   alias: RGB Strip Table white
   sequence:
   - service: remote.send_command
@@ -218,7 +218,7 @@ rgb_strip_table_white:
       command: white
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_flash:
+undefined_undefined:
   alias: RGB Strip Table flash
   sequence:
   - service: remote.send_command
@@ -229,7 +229,7 @@ rgb_strip_table_flash:
       command: flash
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_strobe:
+undefined_undefined:
   alias: RGB Strip Table strobe
   sequence:
   - service: remote.send_command
@@ -240,7 +240,7 @@ rgb_strip_table_strobe:
       command: strobe
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_fade:
+undefined_undefined:
   alias: RGB Strip Table fade
   sequence:
   - service: remote.send_command
@@ -251,7 +251,7 @@ rgb_strip_table_fade:
       command: fade
   mode: single
   icon: mdi:led-strip
-rgb_strip_table_smooth:
+undefined_undefined:
   alias: RGB Strip Table smooth
   sequence:
   - service: remote.send_command
@@ -262,7 +262,7 @@ rgb_strip_table_smooth:
       command: smooth
   mode: single
   icon: mdi:led-strip
-led_light_base_on:
+undefined_undefined:
   alias: LED Light Base on
   sequence:
   - service: remote.send_command
@@ -273,7 +273,7 @@ led_light_base_on:
       command: on
   mode: single
   icon: mdi:led-strip
-led_light_base_off:
+undefined_undefined:
   alias: LED Light Base off
   sequence:
   - service: remote.send_command
@@ -284,7 +284,7 @@ led_light_base_off:
       command: off
   mode: single
   icon: mdi:led-strip
-led_light_base_brighten:
+undefined_undefined:
   alias: LED Light Base brighten
   sequence:
   - service: remote.send_command
@@ -295,7 +295,7 @@ led_light_base_brighten:
       command: brighten
   mode: single
   icon: mdi:led-strip
-led_light_base_dim:
+undefined_undefined:
   alias: LED Light Base dim
   sequence:
   - service: remote.send_command
@@ -306,7 +306,7 @@ led_light_base_dim:
       command: dim
   mode: single
   icon: mdi:led-strip
-led_light_base_flash:
+undefined_undefined:
   alias: LED Light Base flash
   sequence:
   - service: remote.send_command
@@ -317,7 +317,7 @@ led_light_base_flash:
       command: flash
   mode: single
   icon: mdi:led-strip
-led_light_base_strobe:
+undefined_undefined:
   alias: LED Light Base strobe
   sequence:
   - service: remote.send_command
@@ -328,7 +328,7 @@ led_light_base_strobe:
       command: strobe
   mode: single
   icon: mdi:led-strip
-led_light_base_fade:
+undefined_undefined:
   alias: LED Light Base fade
   sequence:
   - service: remote.send_command
@@ -339,7 +339,7 @@ led_light_base_fade:
       command: fade
   mode: single
   icon: mdi:led-strip
-led_light_base_smooth:
+undefined_undefined:
   alias: LED Light Base smooth
   sequence:
   - service: remote.send_command
@@ -350,7 +350,7 @@ led_light_base_smooth:
       command: smooth
   mode: single
   icon: mdi:led-strip
-led_light_base_red:
+undefined_undefined:
   alias: LED Light Base red
   sequence:
   - service: remote.send_command
@@ -361,7 +361,7 @@ led_light_base_red:
       command: red
   mode: single
   icon: mdi:led-strip
-led_light_base_darkorange:
+undefined_undefined:
   alias: LED Light Base darkorange
   sequence:
   - service: remote.send_command
@@ -372,7 +372,7 @@ led_light_base_darkorange:
       command: darkorange
   mode: single
   icon: mdi:led-strip
-led_light_base_orangered:
+undefined_undefined:
   alias: LED Light Base orangered
   sequence:
   - service: remote.send_command
@@ -383,7 +383,7 @@ led_light_base_orangered:
       command: orangered
   mode: single
   icon: mdi:led-strip
-led_light_base_orange:
+undefined_undefined:
   alias: LED Light Base orange
   sequence:
   - service: remote.send_command
@@ -394,7 +394,7 @@ led_light_base_orange:
       command: orange
   mode: single
   icon: mdi:led-strip
-led_light_base_yellow:
+undefined_undefined:
   alias: LED Light Base yellow
   sequence:
   - service: remote.send_command
@@ -405,7 +405,7 @@ led_light_base_yellow:
       command: yellow
   mode: single
   icon: mdi:led-strip
-led_light_base_green:
+undefined_undefined:
   alias: LED Light Base green
   sequence:
   - service: remote.send_command
@@ -416,7 +416,7 @@ led_light_base_green:
       command: green
   mode: single
   icon: mdi:led-strip
-led_light_base_forestgreen:
+undefined_undefined:
   alias: LED Light Base forestgreen
   sequence:
   - service: remote.send_command
@@ -427,7 +427,7 @@ led_light_base_forestgreen:
       command: forestgreen
   mode: single
   icon: mdi:led-strip
-led_light_base_lightseagreen:
+undefined_undefined:
   alias: LED Light Base lightseagreen
   sequence:
   - service: remote.send_command
@@ -438,7 +438,7 @@ led_light_base_lightseagreen:
       command: lightseagreen
   mode: single
   icon: mdi:led-strip
-led_light_base_steelblue:
+undefined_undefined:
   alias: LED Light Base steelblue
   sequence:
   - service: remote.send_command
@@ -449,7 +449,7 @@ led_light_base_steelblue:
       command: steelblue
   mode: single
   icon: mdi:led-strip
-led_light_base_slategrey:
+undefined_undefined:
   alias: LED Light Base slategrey
   sequence:
   - service: remote.send_command
@@ -460,7 +460,7 @@ led_light_base_slategrey:
       command: slategrey
   mode: single
   icon: mdi:led-strip
-led_light_base_blue:
+undefined_undefined:
   alias: LED Light Base blue
   sequence:
   - service: remote.send_command
@@ -471,7 +471,7 @@ led_light_base_blue:
       command: blue
   mode: single
   icon: mdi:led-strip
-led_light_base_royalblue:
+undefined_undefined:
   alias: LED Light Base royalblue
   sequence:
   - service: remote.send_command
@@ -482,7 +482,7 @@ led_light_base_royalblue:
       command: royalblue
   mode: single
   icon: mdi:led-strip
-led_light_base_purple:
+undefined_undefined:
   alias: LED Light Base purple
   sequence:
   - service: remote.send_command
@@ -493,7 +493,7 @@ led_light_base_purple:
       command: purple
   mode: single
   icon: mdi:led-strip
-led_light_base_cadetblue:
+undefined_undefined:
   alias: LED Light Base cadetblue
   sequence:
   - service: remote.send_command
@@ -504,7 +504,7 @@ led_light_base_cadetblue:
       command: cadetblue
   mode: single
   icon: mdi:led-strip
-led_light_base_deeppink:
+undefined_undefined:
   alias: LED Light Base deeppink
   sequence:
   - service: remote.send_command
@@ -515,7 +515,7 @@ led_light_base_deeppink:
       command: deeppink
   mode: single
   icon: mdi:led-strip
-led_light_base_white:
+undefined_undefined:
   alias: LED Light Base white
   sequence:
   - service: remote.send_command
