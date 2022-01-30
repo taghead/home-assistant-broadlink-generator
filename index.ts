@@ -8,15 +8,16 @@ main();
 
 async function main() {
   const dir = await getHomeAssistantDir();
+  const storageDir = `${dir}/.storage/`;
   const devices: Object[] = [];
 
-  const files = await fs.readdirSync(dir);
+  const files = await fs.readdirSync(storageDir);
 
   for (const i in files) {
     const file = files[i];
     if (file.startsWith("broadlink_remote") && file.endsWith(".json")) {
-      console.log(`Found ${dir}${file}`);
-      const data = require(`${dir}${file}`);
+      console.log(`Found ${storageDir}${file}`);
+      const data = require(`${storageDir}${file}`);
       devices.push(data);
     }
   }
