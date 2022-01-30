@@ -64,6 +64,7 @@ function toYAMLScript(deviceId: String, command: String) {
 function simpleSanitize(string: String) {
   string.toLowerCase();
   string.replaceAll(" ", "_");
+  return string;
 }
 
 function log(msg: any) {
