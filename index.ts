@@ -8,7 +8,6 @@ main();
 
 async function main() {
   const dir = await getHomeAssistantDir();
-  console.log(dir);
   const devices: Object[] = [];
 
   const files = await fs.readdirSync(dir);
