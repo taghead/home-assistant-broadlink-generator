@@ -86,7 +86,9 @@ This can be achieved either from source code or releases.
   - Download the approprite binary/executable for your host machine from the releases page.
 
 The program will attempt to automatically detect the Home Assistant directory otherwise you will be prompted to enter a directory.
- 
+
+![ezgif-5-020ed20a19](https://user-images.githubusercontent.com/13403032/151754276-0c497cf0-882b-4a64-9db2-e7a2b172c440.gif)
+
 Once the programs done open Home Assistant 
  
 Configure > Scripts > Reload Scripts
@@ -96,5 +98,6 @@ Configure > Scripts > Reload Scripts
 ## Contributions
 
 @Kamakosy - Editing the gifs
+
 @LiterallyyMe - Identifying rgb remote colors 
 
