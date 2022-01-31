@@ -69,7 +69,7 @@ function toYAMLScript(deviceId: String, command: String, entityId: String) {
       entity_id: ${entityId}
     data:
       device: ${deviceId}
-      command: ${command}
+      command: "${command}"
   mode: single
   icon: mdi:led-strip
 `;
