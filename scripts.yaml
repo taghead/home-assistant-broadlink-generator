@@ -3,7 +3,7 @@ rgb_strip_table_on:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: on
@@ -14,7 +14,7 @@ rgb_strip_table_off:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: off
@@ -25,7 +25,7 @@ rgb_strip_table_brighten:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: brighten
@@ -36,7 +36,7 @@ rgb_strip_table_dim:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: dim
@@ -47,7 +47,7 @@ rgb_strip_table_red:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: red
@@ -58,7 +58,7 @@ rgb_strip_table_darkorange:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: darkorange
@@ -69,7 +69,7 @@ rgb_strip_table_orangered:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: orangered
@@ -80,7 +80,7 @@ rgb_strip_table_orange:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: orange
@@ -91,7 +91,7 @@ rgb_strip_table_yellow:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: yellow
@@ -102,7 +102,7 @@ rgb_strip_table_green:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: green
@@ -113,7 +113,7 @@ rgb_strip_table_forestgreen:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: forestgreen
@@ -124,7 +124,7 @@ rgb_strip_table_lightseagreen:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: lightseagreen
@@ -135,7 +135,7 @@ rgb_strip_table_steelblue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: steelblue
@@ -146,7 +146,7 @@ rgb_strip_table_slategrey:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: slategrey
@@ -157,7 +157,7 @@ rgb_strip_table_blue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: blue
@@ -168,7 +168,7 @@ rgb_strip_table_royalblue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: royalblue
@@ -179,7 +179,7 @@ rgb_strip_table_purple:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: purple
@@ -190,7 +190,7 @@ rgb_strip_table_cadetblue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: cadetblue
@@ -201,7 +201,7 @@ rgb_strip_table_deeppink:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: deeppink
@@ -212,7 +212,7 @@ rgb_strip_table_white:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: white
@@ -223,7 +223,7 @@ rgb_strip_table_flash:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: flash
@@ -234,7 +234,7 @@ rgb_strip_table_strobe:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: strobe
@@ -245,7 +245,7 @@ rgb_strip_table_fade:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: fade
@@ -256,7 +256,7 @@ rgb_strip_table_smooth:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: RGB Strip Table
       command: smooth
@@ -267,7 +267,7 @@ led_light_base_on:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: on
@@ -278,7 +278,7 @@ led_light_base_off:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: off
@@ -289,7 +289,7 @@ led_light_base_brighten:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: brighten
@@ -300,7 +300,7 @@ led_light_base_dim:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: dim
@@ -311,7 +311,7 @@ led_light_base_flash:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: flash
@@ -322,7 +322,7 @@ led_light_base_strobe:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: strobe
@@ -333,7 +333,7 @@ led_light_base_fade:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: fade
@@ -344,7 +344,7 @@ led_light_base_smooth:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: smooth
@@ -355,7 +355,7 @@ led_light_base_red:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: red
@@ -366,7 +366,7 @@ led_light_base_darkorange:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: darkorange
@@ -377,7 +377,7 @@ led_light_base_orangered:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: orangered
@@ -388,7 +388,7 @@ led_light_base_orange:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: orange
@@ -399,7 +399,7 @@ led_light_base_yellow:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: yellow
@@ -410,7 +410,7 @@ led_light_base_green:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: green
@@ -421,7 +421,7 @@ led_light_base_forestgreen:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: forestgreen
@@ -432,7 +432,7 @@ led_light_base_lightseagreen:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: lightseagreen
@@ -443,7 +443,7 @@ led_light_base_steelblue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: steelblue
@@ -454,7 +454,7 @@ led_light_base_slategrey:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: slategrey
@@ -465,7 +465,7 @@ led_light_base_blue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: blue
@@ -476,7 +476,7 @@ led_light_base_royalblue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: royalblue
@@ -487,7 +487,7 @@ led_light_base_purple:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: purple
@@ -498,7 +498,7 @@ led_light_base_cadetblue:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: cadetblue
@@ -509,7 +509,7 @@ led_light_base_deeppink:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: deeppink
@@ -520,7 +520,7 @@ led_light_base_white:
   sequence:
   - service: remote.send_command
     target:
-      entity_id: remote.broadlink_remote
+      entity_id: remote.bedroom_broadlink_remote
     data:
       device: LED Light Base
       command: white
