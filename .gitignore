@@ -41,9 +41,6 @@ dist/**/*
 yarn.lock
 
 # ignore
-broadlink*.json
-configuration.yaml
-.storage/
 index-linux
 index-macos
 index-win.exe
