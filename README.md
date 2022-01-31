@@ -87,7 +87,11 @@ This can be achieved either from source code or releases.
 
 The program will attempt to automatically detect the Home Assistant directory otherwise you will be prompted to enter a directory.
 
-![ezgif-5-020ed20a19](https://user-images.githubusercontent.com/13403032/151754276-0c497cf0-882b-4a64-9db2-e7a2b172c440.gif)
+
+
+https://user-images.githubusercontent.com/13403032/151754475-f99b547d-00a4-4ddd-824d-3a2734a46b95.mp4
+
+
 
 Once the programs done open Home Assistant 
  
